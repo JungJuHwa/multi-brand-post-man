@@ -1,0 +1,2214 @@
+{
+	"info": {
+		"_postman_id": "fa4ae89b-0a22-4f3e-9b19-679c671a01c4",
+		"name": "멀티브랜드",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4754949"
+	},
+	"item": [
+		{
+			"name": "멤버관리 - 브랜드 및 역할관리",
+			"item": [
+				{
+					"name": "\b조직의 브랜드 및 역할 조회",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb21pLW1hbmFnZXIxIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjoyMDI3LFwibG9naW5JZFwiOlwic29taS1tYW5hZ2VyMVwiLFwibmFtZVwiOlwi6rmA7IaM66-466ek64uI7KCAXCIsXCJlbWFpbFwiOlwic29taXl2QG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjkyLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA4MTkwNjUxMTNcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjMsXCJjYXRlZ29yeUlkc1wiOlszXX0se1wiYnJhbmRJZFwiOjEyNixcImNhdGVnb3J5SWRzXCI6WzE3OF19LHtcImJyYW5kSWRcIjoxLFwiY2F0ZWdvcnlJZHNcIjpbMV19XSxcInRva2VuS2V5XCI6XCJxRXNOVi00RGdVajVtMEtkOVpfeG1RXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMVwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgxOTA1NTExM1wifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYwODg4MjczLCJleHAiOjE2NjA4OTE4NzN9.RMZyuEPfzFGMf7drI4sNJMR4iBKP7TiLJ-PHQqSfT4Cyg0tmEshC-FeMDK5Uq7TClwy8yG2FVxoceivv8D2OJw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.52.5.67:8080/api/v1/service/work-places/1/brand-and-roles",
+							"protocol": "http",
+							"host": [
+								"10",
+								"52",
+								"5",
+								"67"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"service",
+								"work-places",
+								"1",
+								"brand-and-roles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "\b조직의 브랜드 및 역할 조회",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb21pLW1hbmFnZXIxIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjoyMDI3LFwibG9naW5JZFwiOlwic29taS1tYW5hZ2VyMVwiLFwibmFtZVwiOlwi6rmA7IaM66-466ek64uI7KCAXCIsXCJlbWFpbFwiOlwic29taXl2QG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjkyLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA4MzEwNTQ5NTdcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjMsXCJjYXRlZ29yeUlkc1wiOlszXX0se1wiYnJhbmRJZFwiOjEyNixcImNhdGVnb3J5SWRzXCI6WzE3OF19LHtcImJyYW5kSWRcIjoxLFwiY2F0ZWdvcnlJZHNcIjpbMV19XSxcInRva2VuS2V5XCI6XCJia29yREs1WGo0eENvUjVhOUhyRG1BXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMVwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgzMTA0NDk1N1wifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYxOTIxMzk3LCJleHAiOjE2NjE5MjQ5OTd9.ZQ70KFI0chjNKrZVHDvTWW0sRgAtKw6YWr-wUWiOwv1PIh3xB872rLMHrcEOtuHT4JNpINah_qZNTmOUbp82xg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.52.5.67:8080/api/v1/service/work-places/1/brand-and-roles",
+									"protocol": "http",
+									"host": [
+										"10",
+										"52",
+										"5",
+										"67"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"service",
+										"work-places",
+										"1",
+										"brand-and-roles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 05:18:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"workPlaceWithWorkplaceRolesDTO\": {\n        \"workPlaceRoles\": [\n            {\n                \"id\": 3,\n                \"name\": \"커스텀역할2\",\n                \"description\": \"역할 수정!!!!!\",\n                \"displayStatus\": false\n            },\n            {\n                \"id\": 2,\n                \"name\": \"커스텀역할\",\n                \"description\": \"역할 수정!!!!!\",\n                \"displayStatus\": true\n            },\n            {\n                \"id\": 1,\n                \"name\": \"상담사\",\n                \"description\": \"상담사입니다 수정!!!!!\",\n                \"displayStatus\": true\n            }\n        ],\n        \"id\": 1,\n        \"name\": \"test\",\n        \"workPlacesStatus\": {\n            \"code\": \"SHOW\",\n            \"desc\": \"활성\"\n        },\n        \"callChannelType\": {\n            \"code\": \"NONE\",\n            \"desc\": \"사용안함\"\n        },\n        \"createBy\": \"somi\",\n        \"createDate\": \"20220721104746\",\n        \"modifyDate\": \"20220721104746\"\n    },\n    \"brands\": [\n        {\n            \"id\": 1,\n            \"name\": \"클게_데브_0\",\n            \"introduce\": \"안녕하세요. 저는 테스트 브랜드11 입니다. 반갑습니다...1122\",\n            \"businessLicense\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/kAMxABbLMy.jpg\",\n            \"businessNumber\": \"111-22-55548\",\n            \"outOfWorkingStatus\": true,\n            \"managerContact\": \"01012345679\",\n            \"homepageUrl\": \"https://www.thecloudgate.io/member\",\n            \"brandIcon\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/eCaHVKSBIB.png\",\n            \"useCounselingCategory\": true,\n            \"useBanWord\": false,\n            \"displayStatus\": true,\n            \"callType\": \"NEOMECCA_INTEGRATED\",\n            \"distributionOption\": \"CATEGORY_AUTO_ASSIGNMENT\",\n            \"useAgentAttendance\": false,\n            \"expireTime\": 1,\n            \"whiteIpUse\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"클게_데브1\",\n            \"introduce\": \"안녕하세요 bzc92입니다.\\n무엇을 도와드릴까요?\",\n            \"businessLicense\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/utHqqCVXbe.png\",\n            \"businessNumber\": \"111-22-55555\",\n            \"outOfWorkingStatus\": true,\n            \"managerContact\": \"010-1111-1111\",\n            \"homepageUrl\": \"http://naver.com\",\n            \"brandIcon\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/qxNZlUSaBG.jpg\",\n            \"useCounselingCategory\": false,\n            \"useBanWord\": true,\n            \"displayStatus\": true,\n            \"callType\": \"NONE\",\n            \"distributionOption\": \"AGENT_PICK\",\n            \"useAgentAttendance\": false,\n            \"expireTime\": 1,\n            \"whiteIpUse\": false\n        },\n        {\n            \"id\": 3,\n            \"name\": \"클게_데브2\",\n            \"introduce\": \"상담배분 사용 브랜드(1차 카테고리) 데브2 브랜드 test!!\",\n            \"businessLicense\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/YMnSvFeeTT.png\",\n            \"businessNumber\": \"111-22-55555\",\n            \"outOfWorkingStatus\": true,\n            \"managerContact\": \"01011111111\",\n            \"homepageUrl\": \"https://www.daum1.net\",\n            \"brandIcon\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/iIsLeaUfZO.jpg\",\n            \"useCounselingCategory\": true,\n            \"useBanWord\": true,\n            \"displayStatus\": true,\n            \"callType\": \"NEOMECCA_INTEGRATED\",\n            \"distributionOption\": \"AGENT_PICK\",\n            \"useAgentAttendance\": false,\n            \"expireTime\": 24,\n            \"whiteIpUse\": false\n        },\n        {\n            \"id\": 4,\n            \"name\": \"클게_데브3\",\n            \"introduce\": \"문화N티켓은 중소단체를 지원하는 공연 및 전시 플랫폼 입니다.\",\n            \"businessLicense\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/utHqqCVXbe.png\",\n            \"businessNumber\": \"111-22-55555\",\n            \"outOfWorkingStatus\": true,\n            \"managerContact\": \"01000000000\",\n            \"homepageUrl\": \"https://www.thecloudgate.co.kr/\",\n            \"brandIcon\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/VKPmqJTFPb.jpeg\",\n            \"useCounselingCategory\": true,\n            \"useBanWord\": false,\n            \"displayStatus\": true,\n            \"callType\": \"NEOMECCA\",\n            \"distributionOption\": \"AGENT_PICK\",\n            \"useAgentAttendance\": false,\n            \"expireTime\": 24,\n            \"whiteIpUse\": false\n        },\n        {\n            \"id\": 5,\n            \"name\": \"클게_데브4\",\n            \"introduce\": \"안녕하세요. TWC 입니다.ㅇㄹㅈㄷㄹ\",\n            \"businessLicense\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/yeSzJiBdJr.png\",\n            \"businessNumber\": \"111-22-55555\",\n            \"outOfWorkingStatus\": true,\n            \"managerContact\": \"01022222222\",\n            \"homepageUrl\": \"http://naver.com\",\n            \"brandIcon\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/WZsyStWRrt.png\",\n            \"useCounselingCategory\": true,\n            \"useBanWord\": true,\n            \"displayStatus\": true,\n            \"callType\": \"NONE\",\n            \"distributionOption\": \"AGENT_PICK\",\n            \"useAgentAttendance\": false,\n            \"expireTime\": 24,\n            \"whiteIpUse\": false\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "\b브랜드 및 역할 할당",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"accountIds\": [1],\n    \"brandIds\": [1,2],\n    \"roleId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/accounts/assignment",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"assignment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "근태 관리",
+			"item": [
+				{
+					"name": "\b브랜드별 상담사 조회",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb21pLW1hbmFnZXIxIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjoyMDI3LFwibG9naW5JZFwiOlwic29taS1tYW5hZ2VyMVwiLFwibmFtZVwiOlwi6rmA7IaM66-466ek64uI7KCAXCIsXCJlbWFpbFwiOlwic29taXl2QG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjkyLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA4MDgxMDA2NDlcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjEsXCJjYXRlZ29yeUlkc1wiOlsxXX0se1wiYnJhbmRJZFwiOjMsXCJjYXRlZ29yeUlkc1wiOlszXX0se1wiYnJhbmRJZFwiOjEyNixcImNhdGVnb3J5SWRzXCI6WzE3OF19XSxcInRva2VuS2V5XCI6XCJqMFd6Ukc3a3B3TmFWb0diWWpaeG53XCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMVwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgwODA5MDY0OVwifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjU5OTQ5NjA5LCJleHAiOjE2NTk5NTMyMDl9.mQLpUAmxoU0YNoWiBStpx5f8nKjF5irVjzJXrOCpVxAWDDQMjGLixthmyLYmmna9gz4Gt8DXQ_YWqPU7wEKIRg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"statusType\":\"식사중\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v2/agents?brandId=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"agents"
+							],
+							"query": [
+								{
+									"key": "brandId",
+									"value": "1",
+									"description": "조회할 브랜드 id. nullable"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "\b브랜드별 상담사 조회",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb21pLW1hbmFnZXIxIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjoyMDI3LFwibG9naW5JZFwiOlwic29taS1tYW5hZ2VyMVwiLFwibmFtZVwiOlwi6rmA7IaM66-466ek64uI7KCAXCIsXCJlbWFpbFwiOlwic29taXl2QG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjkyLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA4MDgxMDA2NDlcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjEsXCJjYXRlZ29yeUlkc1wiOlsxXX0se1wiYnJhbmRJZFwiOjMsXCJjYXRlZ29yeUlkc1wiOlszXX0se1wiYnJhbmRJZFwiOjEyNixcImNhdGVnb3J5SWRzXCI6WzE3OF19XSxcInRva2VuS2V5XCI6XCJqMFd6Ukc3a3B3TmFWb0diWWpaeG53XCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMVwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgwODA5MDY0OVwifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjU5OTQ5NjA5LCJleHAiOjE2NTk5NTMyMDl9.mQLpUAmxoU0YNoWiBStpx5f8nKjF5irVjzJXrOCpVxAWDDQMjGLixthmyLYmmna9gz4Gt8DXQ_YWqPU7wEKIRg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"statusType\":\"식사중\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v2/agents?brandId=5320",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v2",
+										"agents"
+									],
+									"query": [
+										{
+											"key": "brandId",
+											"value": "5320",
+											"description": "조회할 브랜드 id. nullable"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Aug 2022 09:25:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3139,\n        \"loginId\": \"smtest-manager\",\n        \"name\": \"김소미test\",\n        \"passwordChangeDate\": null,\n        \"phoneNumber\": \"01055415611\",\n        \"email\": \"somiyv@thewc.co.kr\",\n        \"workingStatus\": \"LOGOUT\",\n        \"approvalStatus\": \"ENABLE\",\n        \"currentPermissionCount\": 0,\n        \"currentTokenKey\": \"\",\n        \"ticketAgentId\": 1128,\n        \"admin\": false,\n        \"loginTryCount\": 0,\n        \"lockStatus\": \"UNLOCK\",\n        \"lockDate\": null,\n        \"infoReceiveAgree\": null,\n        \"infoReceiveAgreeDate\": null,\n        \"createBy\": \"adminTest04\",\n        \"createDate\": \"20220715141730\",\n        \"modifyBy\": \"scheduler\",\n        \"modifyDate\": \"20220722104847\"\n    },\n    {\n        \"id\": 3140,\n        \"loginId\": \"smtest-agent1\",\n        \"name\": \"김소미\",\n        \"passwordChangeDate\": null,\n        \"phoneNumber\": \"01055415611\",\n        \"email\": \"somiyv@thewc.co.kr\",\n        \"workingStatus\": \"LOGOUT\",\n        \"approvalStatus\": \"ENABLE\",\n        \"currentPermissionCount\": 0,\n        \"currentTokenKey\": \"\",\n        \"ticketAgentId\": 1129,\n        \"admin\": false,\n        \"loginTryCount\": 0,\n        \"lockStatus\": \"UNLOCK\",\n        \"lockDate\": null,\n        \"infoReceiveAgree\": false,\n        \"infoReceiveAgreeDate\": \"20220715153718\",\n        \"createBy\": \"scheduler\",\n        \"createDate\": \"20220715153718\",\n        \"modifyBy\": \"scheduler\",\n        \"modifyDate\": \"20220716154016\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "상담사 근태조회",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb21pLW1hbmFnZXIxIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjoyMDI3LFwibG9naW5JZFwiOlwic29taS1tYW5hZ2VyMVwiLFwibmFtZVwiOlwi6rmA7IaM66-466ek64uI7KCAXCIsXCJlbWFpbFwiOlwic29taXl2QG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjkyLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA4MzEwNTQ5NTdcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjMsXCJjYXRlZ29yeUlkc1wiOlszXX0se1wiYnJhbmRJZFwiOjEyNixcImNhdGVnb3J5SWRzXCI6WzE3OF19LHtcImJyYW5kSWRcIjoxLFwiY2F0ZWdvcnlJZHNcIjpbMV19XSxcInRva2VuS2V5XCI6XCJia29yREs1WGo0eENvUjVhOUhyRG1BXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMVwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgzMTA0NDk1N1wifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYxOTIxMzk3LCJleHAiOjE2NjE5MjQ5OTd9.ZQ70KFI0chjNKrZVHDvTWW0sRgAtKw6YWr-wUWiOwv1PIh3xB872rLMHrcEOtuHT4JNpINah_qZNTmOUbp82xg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/working-histories?agentId=2027&startDate=2022-08-01&endDate=2022-08-30&page=2&size=15&brandId=1&workingStatuses=IN_COUNSELING,PRE_COUNSELING,LOGOUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"working-histories"
+							],
+							"query": [
+								{
+									"key": "agentId",
+									"value": "2027"
+								},
+								{
+									"key": "startDate",
+									"value": "2022-08-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2022-08-30",
+									"description": "종료날짜"
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"description": "페이지 번호"
+								},
+								{
+									"key": "size",
+									"value": "15",
+									"description": "default 15. 노출개수"
+								},
+								{
+									"key": "brandId",
+									"value": "1"
+								},
+								{
+									"key": "workingStatuses",
+									"value": "IN_COUNSELING,PRE_COUNSELING,LOGOUT"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "상담사 근태조회",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb21pLW1hbmFnZXIxIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjoyMDI3LFwibG9naW5JZFwiOlwic29taS1tYW5hZ2VyMVwiLFwibmFtZVwiOlwi6rmA7IaM66-466ek64uI7KCAXCIsXCJlbWFpbFwiOlwic29taXl2QG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjkyLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA4MzEwNTQ5NTdcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjMsXCJjYXRlZ29yeUlkc1wiOlszXX0se1wiYnJhbmRJZFwiOjEyNixcImNhdGVnb3J5SWRzXCI6WzE3OF19LHtcImJyYW5kSWRcIjoxLFwiY2F0ZWdvcnlJZHNcIjpbMV19XSxcInRva2VuS2V5XCI6XCJia29yREs1WGo0eENvUjVhOUhyRG1BXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMVwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgzMTA0NDk1N1wifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYxOTIxMzk3LCJleHAiOjE2NjE5MjQ5OTd9.ZQ70KFI0chjNKrZVHDvTWW0sRgAtKw6YWr-wUWiOwv1PIh3xB872rLMHrcEOtuHT4JNpINah_qZNTmOUbp82xg",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/v2/agents/2027/working-history?startDate=2022-08-01&endDate=2022-08-30&page=2&size=15&brandId=1&workingStatuses=IN_COUNSELING,PRE_COUNSELING,LOGOUT",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v2",
+										"agents",
+										"2027",
+										"working-history"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2022-08-01",
+											"description": "시작날짜"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-08-30",
+											"description": "종료날짜"
+										},
+										{
+											"key": "page",
+											"value": "2",
+											"description": "페이지 번호"
+										},
+										{
+											"key": "size",
+											"value": "15",
+											"description": "default 15. 노출개수"
+										},
+										{
+											"key": "brandId",
+											"value": "1"
+										},
+										{
+											"key": "workingStatuses",
+											"value": "IN_COUNSELING,PRE_COUNSELING,LOGOUT"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 04:51:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"paging\": {\n        \"totalPages\": 2,\n        \"totalElements\": 28\n    },\n    \"data\": [\n        {\n            \"id\": 126477,\n            \"workingStatus\": {\n                \"code\": \"LOGOUT\",\n                \"desc\": \"로그아웃\"\n            },\n            \"createDate\": \"20220810165406\"\n        },\n        {\n            \"id\": 126476,\n            \"workingStatus\": {\n                \"code\": \"PRE_COUNSELING\",\n                \"desc\": \"상담준비\"\n            },\n            \"createDate\": \"20220810120027\"\n        },\n        {\n            \"id\": 126475,\n            \"workingStatus\": {\n                \"code\": \"LOGOUT\",\n                \"desc\": \"로그아웃\"\n            },\n            \"createDate\": \"20220810120026\"\n        },\n        {\n            \"id\": 126474,\n            \"workingStatus\": {\n                \"code\": \"PRE_COUNSELING\",\n                \"desc\": \"상담준비\"\n            },\n            \"createDate\": \"20220810103205\"\n        },\n        {\n            \"id\": 126473,\n            \"workingStatus\": {\n                \"code\": \"LOGOUT\",\n                \"desc\": \"로그아웃\"\n            },\n            \"createDate\": \"20220810103205\"\n        },\n        {\n            \"id\": 126458,\n            \"workingStatus\": {\n                \"code\": \"PRE_COUNSELING\",\n                \"desc\": \"상담준비\"\n            },\n            \"createDate\": \"20220805102124\"\n        },\n        {\n            \"id\": 126457,\n            \"workingStatus\": {\n                \"code\": \"LOGOUT\",\n                \"desc\": \"로그아웃\"\n            },\n            \"createDate\": \"20220805102124\"\n        },\n        {\n            \"id\": 126456,\n            \"workingStatus\": {\n                \"code\": \"PRE_COUNSELING\",\n                \"desc\": \"상담준비\"\n            },\n            \"createDate\": \"20220804163154\"\n        },\n        {\n            \"id\": 126455,\n            \"workingStatus\": {\n                \"code\": \"LOGOUT\",\n                \"desc\": \"로그아웃\"\n            },\n            \"createDate\": \"20220804163154\"\n        },\n        {\n            \"id\": 126452,\n            \"workingStatus\": {\n                \"code\": \"PRE_COUNSELING\",\n                \"desc\": \"상담준비\"\n            },\n            \"createDate\": \"20220803174937\"\n        },\n        {\n            \"id\": 126451,\n            \"workingStatus\": {\n                \"code\": \"LOGOUT\",\n                \"desc\": \"로그아웃\"\n            },\n            \"createDate\": \"20220803174936\"\n        },\n        {\n            \"id\": 126450,\n            \"workingStatus\": {\n                \"code\": \"PRE_COUNSELING\",\n                \"desc\": \"상담준비\"\n            },\n            \"createDate\": \"20220803163859\"\n        },\n        {\n            \"id\": 126449,\n            \"workingStatus\": {\n                \"code\": \"LOGOUT\",\n                \"desc\": \"로그아웃\"\n            },\n            \"createDate\": \"20220803163859\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "역할관리",
+			"item": [
+				{
+					"name": "\b조직의 역할 조회",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzbXRlc3QtbWFuYWdlciIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6MzEzOSxcImxvZ2luSWRcIjpcInNtdGVzdC1tYW5hZ2VyXCIsXCJuYW1lXCI6XCLquYDshozrr7h0ZXN0XCIsXCJlbWFpbFwiOlwic29taXl2QHRoZXdjLmNvLmtyXCIsXCJ0aWNrZXRBZ2VudElkXCI6MTEyOCxcImV4cGlyZVRpbWVcIjpcIjIwMjIwNzIyMDE0ODIyXCIsXCJhZ2VudE1hcHBpbmdCcmFuZFZpZXdzXCI6W3tcImJyYW5kSWRcIjo1MzIwLFwiY2F0ZWdvcnlJZHNcIjpbMTE1MSwxMTUyXX1dLFwidG9rZW5LZXlcIjpcImkwd3FDdVoxQ1JzbXZublVqZlJscGdcIixcImFkbWluXCI6ZmFsc2UsXCJmaXJzdEJyYW5kSWRcIjo1MzIwLFwidG9rZW5Jc3N1ZWRBdFwiOlwiMjAyMjA3MjEwMTQ4MjJcIn0iLCJpc3MiOiJodHRwOi8vd3d3LmNsb3VkZ2F0ZS5pbyIsImlhdCI6MTY1ODM2ODEwMiwiZXhwIjoxNjU4NDU0NTAyfQ.KJ48hPBIlwNiEe9lsWzc2dP2NcEXQcpqyhO-nDNGEecEUqA5d-vcHyQa4oUmNWD5qzlQF3B6LYVOGCUbGPwS9w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.52.5.67:8080/api/v1/work-places/1/roles",
+							"protocol": "http",
+							"host": [
+								"10",
+								"52",
+								"5",
+								"67"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"work-places",
+								"1",
+								"roles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "\b조직의 역할 조회",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb21pLW1hbmFnZXIxIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjoyMDI3LFwibG9naW5JZFwiOlwic29taS1tYW5hZ2VyMVwiLFwibmFtZVwiOlwi6rmA7IaM66-466ek64uI7KCAXCIsXCJlbWFpbFwiOlwic29taXl2QG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjkyLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA4MzEwNTQ5NTdcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjMsXCJjYXRlZ29yeUlkc1wiOlszXX0se1wiYnJhbmRJZFwiOjEyNixcImNhdGVnb3J5SWRzXCI6WzE3OF19LHtcImJyYW5kSWRcIjoxLFwiY2F0ZWdvcnlJZHNcIjpbMV19XSxcInRva2VuS2V5XCI6XCJia29yREs1WGo0eENvUjVhOUhyRG1BXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMVwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgzMTA0NDk1N1wifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYxOTIxMzk3LCJleHAiOjE2NjE5MjQ5OTd9.ZQ70KFI0chjNKrZVHDvTWW0sRgAtKw6YWr-wUWiOwv1PIh3xB872rLMHrcEOtuHT4JNpINah_qZNTmOUbp82xg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/work-places/1/roles",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"work-places",
+										"1",
+										"roles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 05:01:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"permissions\": [\n            {\n                \"id\": 33,\n                \"name\": \"상담 기본 기능 사용하기\",\n                \"permissionKey\": \"TEXT_OPERATION\"\n            },\n            {\n                \"id\": 32,\n                \"name\": \"상담 데스크 메뉴 보기\",\n                \"permissionKey\": \"OPERATION_MENU\"\n            },\n            {\n                \"id\": 34,\n                \"name\": \"상담건 할당하기\",\n                \"permissionKey\": \"ASSIGN\"\n            }\n        ],\n        \"accountRoles\": [\n            {\n                \"id\": 189\n            }\n        ],\n        \"id\": 1,\n        \"name\": \"상담사\",\n        \"description\": \"상담사입니다 수정!!!!!\",\n        \"displayStatus\": true\n    },\n    {\n        \"permissions\": [\n            {\n                \"id\": 38,\n                \"name\": \"상담건 할당하기\",\n                \"permissionKey\": \"ASSIGN\"\n            },\n            {\n                \"id\": 39,\n                \"name\": \"상담 기본 기능 사용하기\",\n                \"permissionKey\": \"TEXT_OPERATION\"\n            },\n            {\n                \"id\": 40,\n                \"name\": \"상담 데스크 메뉴 보기\",\n                \"permissionKey\": \"OPERATION_MENU\"\n            }\n        ],\n        \"accountRoles\": [\n            {\n                \"id\": 190\n            }\n        ],\n        \"id\": 2,\n        \"name\": \"커스텀역할\",\n        \"description\": \"역할 수정!!!!!\",\n        \"displayStatus\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "조직의 역할 수정",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzbXRlc3QtbWFuYWdlciIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6MzEzOSxcImxvZ2luSWRcIjpcInNtdGVzdC1tYW5hZ2VyXCIsXCJuYW1lXCI6XCLquYDshozrr7h0ZXN0XCIsXCJlbWFpbFwiOlwic29taXl2QHRoZXdjLmNvLmtyXCIsXCJ0aWNrZXRBZ2VudElkXCI6MTEyOCxcImV4cGlyZVRpbWVcIjpcIjIwMjIwNzIyMDE0ODIyXCIsXCJhZ2VudE1hcHBpbmdCcmFuZFZpZXdzXCI6W3tcImJyYW5kSWRcIjo1MzIwLFwiY2F0ZWdvcnlJZHNcIjpbMTE1MSwxMTUyXX1dLFwidG9rZW5LZXlcIjpcImkwd3FDdVoxQ1JzbXZublVqZlJscGdcIixcImFkbWluXCI6ZmFsc2UsXCJmaXJzdEJyYW5kSWRcIjo1MzIwLFwidG9rZW5Jc3N1ZWRBdFwiOlwiMjAyMjA3MjEwMTQ4MjJcIn0iLCJpc3MiOiJodHRwOi8vd3d3LmNsb3VkZ2F0ZS5pbyIsImlhdCI6MTY1ODM2ODEwMiwiZXhwIjoxNjU4NDU0NTAyfQ.KJ48hPBIlwNiEe9lsWzc2dP2NcEXQcpqyhO-nDNGEecEUqA5d-vcHyQa4oUmNWD5qzlQF3B6LYVOGCUbGPwS9w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"roleId\": 1,\n    \"description\": \"상담사입니다 수정!!!!!\",\n    \"permissions\": [\"OPERATION_MENU\", \"TEXT_OPERATION\", \"ASSIGN\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/roles/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"roles",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "조직의 역할 수정",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzbXRlc3QtbWFuYWdlciIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6MzEzOSxcImxvZ2luSWRcIjpcInNtdGVzdC1tYW5hZ2VyXCIsXCJuYW1lXCI6XCLquYDshozrr7h0ZXN0XCIsXCJlbWFpbFwiOlwic29taXl2QHRoZXdjLmNvLmtyXCIsXCJ0aWNrZXRBZ2VudElkXCI6MTEyOCxcImV4cGlyZVRpbWVcIjpcIjIwMjIwNzIyMDE0ODIyXCIsXCJhZ2VudE1hcHBpbmdCcmFuZFZpZXdzXCI6W3tcImJyYW5kSWRcIjo1MzIwLFwiY2F0ZWdvcnlJZHNcIjpbMTE1MSwxMTUyXX1dLFwidG9rZW5LZXlcIjpcImkwd3FDdVoxQ1JzbXZublVqZlJscGdcIixcImFkbWluXCI6ZmFsc2UsXCJmaXJzdEJyYW5kSWRcIjo1MzIwLFwidG9rZW5Jc3N1ZWRBdFwiOlwiMjAyMjA3MjEwMTQ4MjJcIn0iLCJpc3MiOiJodHRwOi8vd3d3LmNsb3VkZ2F0ZS5pbyIsImlhdCI6MTY1ODM2ODEwMiwiZXhwIjoxNjU4NDU0NTAyfQ.KJ48hPBIlwNiEe9lsWzc2dP2NcEXQcpqyhO-nDNGEecEUqA5d-vcHyQa4oUmNWD5qzlQF3B6LYVOGCUbGPwS9w",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"역할 수정!!!!!\",\n    \"permissions\": [\"OPERATION_MENU\", \"TEXT_OPERATION\", \"ASSIGN\"]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/roles/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"roles",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Jul 2022 07:25:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"permissions\": [\n        {\n            \"id\": null,\n            \"name\": \"상담 데스크 메뉴 보기\",\n            \"permissionKey\": \"OPERATION_MENU\"\n        },\n        {\n            \"id\": null,\n            \"name\": \"상담건 할당하기\",\n            \"permissionKey\": \"ASSIGN\"\n        },\n        {\n            \"id\": null,\n            \"name\": \"상담 기본 기능 사용하기\",\n            \"permissionKey\": \"TEXT_OPERATION\"\n        }\n    ],\n    \"id\": 2,\n    \"name\": \"커스텀역할\",\n    \"description\": \"역할 수정!!!!!\",\n    \"displayStatus\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "조직의 역할 추가",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzbXRlc3QtbWFuYWdlciIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6MzEzOSxcImxvZ2luSWRcIjpcInNtdGVzdC1tYW5hZ2VyXCIsXCJuYW1lXCI6XCLquYDshozrr7h0ZXN0XCIsXCJlbWFpbFwiOlwic29taXl2QHRoZXdjLmNvLmtyXCIsXCJ0aWNrZXRBZ2VudElkXCI6MTEyOCxcImV4cGlyZVRpbWVcIjpcIjIwMjIwNzIyMDE0ODIyXCIsXCJhZ2VudE1hcHBpbmdCcmFuZFZpZXdzXCI6W3tcImJyYW5kSWRcIjo1MzIwLFwiY2F0ZWdvcnlJZHNcIjpbMTE1MSwxMTUyXX1dLFwidG9rZW5LZXlcIjpcImkwd3FDdVoxQ1JzbXZublVqZlJscGdcIixcImFkbWluXCI6ZmFsc2UsXCJmaXJzdEJyYW5kSWRcIjo1MzIwLFwidG9rZW5Jc3N1ZWRBdFwiOlwiMjAyMjA3MjEwMTQ4MjJcIn0iLCJpc3MiOiJodHRwOi8vd3d3LmNsb3VkZ2F0ZS5pbyIsImlhdCI6MTY1ODM2ODEwMiwiZXhwIjoxNjU4NDU0NTAyfQ.KJ48hPBIlwNiEe9lsWzc2dP2NcEXQcpqyhO-nDNGEecEUqA5d-vcHyQa4oUmNWD5qzlQF3B6LYVOGCUbGPwS9w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"커스텀역할\",\n    \"description\": \"커스텀입니다\",\n    \"permissions\": [\"OPERATION_MENU\", \"TEXT_OPERATION\", \"ASSIGN\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/work-places/1/roles",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"work-places",
+								"1",
+								"roles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "조직의 역할 추가",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzbXRlc3QtbWFuYWdlciIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6MzEzOSxcImxvZ2luSWRcIjpcInNtdGVzdC1tYW5hZ2VyXCIsXCJuYW1lXCI6XCLquYDshozrr7h0ZXN0XCIsXCJlbWFpbFwiOlwic29taXl2QHRoZXdjLmNvLmtyXCIsXCJ0aWNrZXRBZ2VudElkXCI6MTEyOCxcImV4cGlyZVRpbWVcIjpcIjIwMjIwNzIyMDE0ODIyXCIsXCJhZ2VudE1hcHBpbmdCcmFuZFZpZXdzXCI6W3tcImJyYW5kSWRcIjo1MzIwLFwiY2F0ZWdvcnlJZHNcIjpbMTE1MSwxMTUyXX1dLFwidG9rZW5LZXlcIjpcImkwd3FDdVoxQ1JzbXZublVqZlJscGdcIixcImFkbWluXCI6ZmFsc2UsXCJmaXJzdEJyYW5kSWRcIjo1MzIwLFwidG9rZW5Jc3N1ZWRBdFwiOlwiMjAyMjA3MjEwMTQ4MjJcIn0iLCJpc3MiOiJodHRwOi8vd3d3LmNsb3VkZ2F0ZS5pbyIsImlhdCI6MTY1ODM2ODEwMiwiZXhwIjoxNjU4NDU0NTAyfQ.KJ48hPBIlwNiEe9lsWzc2dP2NcEXQcpqyhO-nDNGEecEUqA5d-vcHyQa4oUmNWD5qzlQF3B6LYVOGCUbGPwS9w",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"커스텀역할\",\n    \"description\": \"커스텀입니다\",\n    \"permissions\": [\"OPERATION_MENU\", \"TEXT_OPERATION\", \"ASSIGN\"]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/work-places/1/roles",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"work-places",
+										"1",
+										"roles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Jul 2022 07:22:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"permissions\": [\n        {\n            \"id\": 36,\n            \"name\": \"상담건 할당하기\",\n            \"permissionKey\": \"ASSIGN\"\n        },\n        {\n            \"id\": 35,\n            \"name\": \"상담 데스크 메뉴 보기\",\n            \"permissionKey\": \"OPERATION_MENU\"\n        },\n        {\n            \"id\": 37,\n            \"name\": \"상담 기본 기능 사용하기\",\n            \"permissionKey\": \"TEXT_OPERATION\"\n        }\n    ],\n    \"id\": 2,\n    \"name\": \"커스텀역할\",\n    \"description\": \"커스텀입니다\",\n    \"displayStatus\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "조직의 역할 삭제",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzbXRlc3QtbWFuYWdlciIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6MzEzOSxcImxvZ2luSWRcIjpcInNtdGVzdC1tYW5hZ2VyXCIsXCJuYW1lXCI6XCLquYDshozrr7h0ZXN0XCIsXCJlbWFpbFwiOlwic29taXl2QHRoZXdjLmNvLmtyXCIsXCJ0aWNrZXRBZ2VudElkXCI6MTEyOCxcImV4cGlyZVRpbWVcIjpcIjIwMjIwNzIyMDE0ODIyXCIsXCJhZ2VudE1hcHBpbmdCcmFuZFZpZXdzXCI6W3tcImJyYW5kSWRcIjo1MzIwLFwiY2F0ZWdvcnlJZHNcIjpbMTE1MSwxMTUyXX1dLFwidG9rZW5LZXlcIjpcImkwd3FDdVoxQ1JzbXZublVqZlJscGdcIixcImFkbWluXCI6ZmFsc2UsXCJmaXJzdEJyYW5kSWRcIjo1MzIwLFwidG9rZW5Jc3N1ZWRBdFwiOlwiMjAyMjA3MjEwMTQ4MjJcIn0iLCJpc3MiOiJodHRwOi8vd3d3LmNsb3VkZ2F0ZS5pbyIsImlhdCI6MTY1ODM2ODEwMiwiZXhwIjoxNjU4NDU0NTAyfQ.KJ48hPBIlwNiEe9lsWzc2dP2NcEXQcpqyhO-nDNGEecEUqA5d-vcHyQa4oUmNWD5qzlQF3B6LYVOGCUbGPwS9w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"roleId\": 1,\n    \"description\": \"상담사입니다 수정\",\n    \"permissions\": [\"OPERATION_MENU\", \"TEXT_OPERATION\", \"ASSIGN\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/work-places/1/roles",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"work-places",
+								"1",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "멤버 접속 관리 조회",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb21pLW1hbmFnZXIxIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjoyMDI3LFwibG9naW5JZFwiOlwic29taS1tYW5hZ2VyMVwiLFwibmFtZVwiOlwi6rmA7IaM66-466ek64uI7KCAXCIsXCJlbWFpbFwiOlwic29taXl2QG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjkyLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA4MjYwODQwMTJcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjEsXCJjYXRlZ29yeUlkc1wiOlsxXX0se1wiYnJhbmRJZFwiOjEyNixcImNhdGVnb3J5SWRzXCI6WzE3OF19LHtcImJyYW5kSWRcIjozLFwiY2F0ZWdvcnlJZHNcIjpbM119XSxcInRva2VuS2V5XCI6XCI3MFFRMkhPTjRuQWtkVl8xcHFacW1BXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMVwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgyNjA3NDAxMlwifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYxNDk5NjEyLCJleHAiOjE2NjE1MDMyMTJ9._Tc2_u9Z8EOJUHWzArZoL59QyUoXmsgtsWN-P-savR_Bg8BQsviTT2ehF_GTEQPABHbl7W6Ppq9qamSQ-UZ-vg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"loginRequestType\": \"COMMON\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.52.5.67:8080/api/v2/admin/login-history?workPlaceId=1&searchType=ALL&searchValue=&startDate=2022-08-01&endDate=2022-08-30",
+							"protocol": "http",
+							"host": [
+								"10",
+								"52",
+								"5",
+								"67"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v2",
+								"admin",
+								"login-history"
+							],
+							"query": [
+								{
+									"key": "workPlaceId",
+									"value": "1",
+									"description": "조직 id"
+								},
+								{
+									"key": "searchType",
+									"value": "ALL",
+									"description": "검색 조건 (ALL, ACCOUNT_NAME, ACCOUNT_LOGIN_ID, IP)"
+								},
+								{
+									"key": "searchValue",
+									"value": "",
+									"description": "검색 내용"
+								},
+								{
+									"key": "startDate",
+									"value": "2022-08-01",
+									"description": "시작 날짜"
+								},
+								{
+									"key": "endDate",
+									"value": "2022-08-30",
+									"description": "종료 날짜"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "멤버 접속 관리 조회",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb21pLW1hbmFnZXIxIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjoyMDI3LFwibG9naW5JZFwiOlwic29taS1tYW5hZ2VyMVwiLFwibmFtZVwiOlwi6rmA7IaM66-466ek64uI7KCAXCIsXCJlbWFpbFwiOlwic29taXl2QG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjkyLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA4MzEwNTQ5NTdcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjMsXCJjYXRlZ29yeUlkc1wiOlszXX0se1wiYnJhbmRJZFwiOjEyNixcImNhdGVnb3J5SWRzXCI6WzE3OF19LHtcImJyYW5kSWRcIjoxLFwiY2F0ZWdvcnlJZHNcIjpbMV19XSxcInRva2VuS2V5XCI6XCJia29yREs1WGo0eENvUjVhOUhyRG1BXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMVwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgzMTA0NDk1N1wifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYxOTIxMzk3LCJleHAiOjE2NjE5MjQ5OTd9.ZQ70KFI0chjNKrZVHDvTWW0sRgAtKw6YWr-wUWiOwv1PIh3xB872rLMHrcEOtuHT4JNpINah_qZNTmOUbp82xg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"loginRequestType\": \"COMMON\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.52.5.67:8080/api/v2/admin/login-history?workPlaceId=1&searchType=ALL&searchValue=&startDate=2022-08-01&endDate=2022-08-30",
+									"protocol": "http",
+									"host": [
+										"10",
+										"52",
+										"5",
+										"67"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v2",
+										"admin",
+										"login-history"
+									],
+									"query": [
+										{
+											"key": "workPlaceId",
+											"value": "1",
+											"description": "조직 id"
+										},
+										{
+											"key": "searchType",
+											"value": "ALL",
+											"description": "검색 조건 (ALL, ACCOUNT_NAME, ACCOUNT_LOGIN_ID, IP)"
+										},
+										{
+											"key": "searchValue",
+											"value": "",
+											"description": "검색 내용"
+										},
+										{
+											"key": "startDate",
+											"value": "2022-08-01",
+											"description": "시작 날짜"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-08-30",
+											"description": "종료 날짜"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 Aug 2022 05:18:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"paging\": {\n        \"totalPages\": 1,\n        \"totalElements\": 10\n    },\n    \"data\": [\n        {\n            \"id\": 10,\n            \"accountsDTO\": {\n                \"id\": 2,\n                \"accountsType\": {\n                    \"code\": \"MEMBER\",\n                    \"desc\": \"일반\"\n                },\n                \"accountsStatus\": {\n                    \"code\": \"JOIN\",\n                    \"desc\": \"가입\"\n                },\n                \"name\": \"김소미1\",\n                \"email\": \"somiyv@thewc.co.kr\",\n                \"loginId\": \"somiyv1\",\n                \"passwordChangeDate\": null,\n                \"phoneNumber\": null,\n                \"marketingConsentYn\": null,\n                \"login\": false,\n                \"currentTokenKey\": \"ZE3uAv56nJS-sDbSTjgZlQ\",\n                \"admin\": false,\n                \"loginTryCount\": 0,\n                \"lockStatus\": {\n                    \"code\": \"UNLOCK\",\n                    \"desc\": \"계정 잠금해제\"\n                },\n                \"lockDate\": null,\n                \"joinDate\": null,\n                \"lastLoginDate\": null\n            },\n            \"loginType\": {\n                \"code\": \"LOGIN\",\n                \"desc\": \"로그인\"\n            },\n            \"ip\": \"10.52.5.67\",\n            \"displayStatus\": null,\n            \"createDate\": \"20220826140453\"\n        },\n        {\n            \"id\": 9,\n            \"accountsDTO\": {\n                \"id\": 2,\n                \"accountsType\": {\n                    \"code\": \"MEMBER\",\n                    \"desc\": \"일반\"\n                },\n                \"accountsStatus\": {\n                    \"code\": \"JOIN\",\n                    \"desc\": \"가입\"\n                },\n                \"name\": \"김소미1\",\n                \"email\": \"somiyv@thewc.co.kr\",\n                \"loginId\": \"somiyv1\",\n                \"passwordChangeDate\": null,\n                \"phoneNumber\": null,\n                \"marketingConsentYn\": null,\n                \"login\": false,\n                \"currentTokenKey\": \"ZE3uAv56nJS-sDbSTjgZlQ\",\n                \"admin\": false,\n                \"loginTryCount\": 0,\n                \"lockStatus\": {\n                    \"code\": \"UNLOCK\",\n                    \"desc\": \"계정 잠금해제\"\n                },\n                \"lockDate\": null,\n                \"joinDate\": null,\n                \"lastLoginDate\": null\n            },\n            \"loginType\": {\n                \"code\": \"LOGIN\",\n                \"desc\": \"로그인\"\n            },\n            \"ip\": \"10.52.5.67\",\n            \"displayStatus\": null,\n            \"createDate\": \"20220824140453\"\n        },\n        {\n            \"id\": 8,\n            \"accountsDTO\": {\n                \"id\": 2,\n                \"accountsType\": {\n                    \"code\": \"MEMBER\",\n                    \"desc\": \"일반\"\n                },\n                \"accountsStatus\": {\n                    \"code\": \"JOIN\",\n                    \"desc\": \"가입\"\n                },\n                \"name\": \"김소미1\",\n                \"email\": \"somiyv@thewc.co.kr\",\n                \"loginId\": \"somiyv1\",\n                \"passwordChangeDate\": null,\n                \"phoneNumber\": null,\n                \"marketingConsentYn\": null,\n                \"login\": false,\n                \"currentTokenKey\": \"ZE3uAv56nJS-sDbSTjgZlQ\",\n                \"admin\": false,\n                \"loginTryCount\": 0,\n                \"lockStatus\": {\n                    \"code\": \"UNLOCK\",\n                    \"desc\": \"계정 잠금해제\"\n                },\n                \"lockDate\": null,\n                \"joinDate\": null,\n                \"lastLoginDate\": null\n            },\n            \"loginType\": {\n                \"code\": \"LOGIN\",\n                \"desc\": \"로그인\"\n            },\n            \"ip\": \"10.52.5.67\",\n            \"displayStatus\": null,\n            \"createDate\": \"20220823140453\"\n        },\n        {\n            \"id\": 7,\n            \"accountsDTO\": {\n                \"id\": 2,\n                \"accountsType\": {\n                    \"code\": \"MEMBER\",\n                    \"desc\": \"일반\"\n                },\n                \"accountsStatus\": {\n                    \"code\": \"JOIN\",\n                    \"desc\": \"가입\"\n                },\n                \"name\": \"김소미1\",\n                \"email\": \"somiyv@thewc.co.kr\",\n                \"loginId\": \"somiyv1\",\n                \"passwordChangeDate\": null,\n                \"phoneNumber\": null,\n                \"marketingConsentYn\": null,\n                \"login\": false,\n                \"currentTokenKey\": \"ZE3uAv56nJS-sDbSTjgZlQ\",\n                \"admin\": false,\n                \"loginTryCount\": 0,\n                \"lockStatus\": {\n                    \"code\": \"UNLOCK\",\n                    \"desc\": \"계정 잠금해제\"\n                },\n                \"lockDate\": null,\n                \"joinDate\": null,\n                \"lastLoginDate\": null\n            },\n            \"loginType\": {\n                \"code\": \"LOGIN\",\n                \"desc\": \"로그인\"\n            },\n            \"ip\": \"10.52.5.67\",\n            \"displayStatus\": null,\n            \"createDate\": \"20220822140453\"\n        },\n        {\n            \"id\": 6,\n            \"accountsDTO\": {\n                \"id\": 1,\n                \"accountsType\": {\n                    \"code\": \"OWNER\",\n                    \"desc\": \"오너\"\n                },\n                \"accountsStatus\": {\n                    \"code\": \"JOIN\",\n                    \"desc\": \"가입\"\n                },\n                \"name\": \"김소미\",\n                \"email\": \"somiyv@thewc.co.kr\",\n                \"loginId\": \"somiyv\",\n                \"passwordChangeDate\": null,\n                \"phoneNumber\": null,\n                \"marketingConsentYn\": null,\n                \"login\": false,\n                \"currentTokenKey\": \"ZE3uAv56nJS-sDbSTjgZlQ\",\n                \"admin\": false,\n                \"loginTryCount\": 0,\n                \"lockStatus\": {\n                    \"code\": \"UNLOCK\",\n                    \"desc\": \"계정 잠금해제\"\n                },\n                \"lockDate\": null,\n                \"joinDate\": null,\n                \"lastLoginDate\": null\n            },\n            \"loginType\": {\n                \"code\": \"LOGIN\",\n                \"desc\": \"로그인\"\n            },\n            \"ip\": \"10.52.5.67\",\n            \"displayStatus\": null,\n            \"createDate\": \"20220821140453\"\n        },\n        {\n            \"id\": 5,\n            \"accountsDTO\": {\n                \"id\": 1,\n                \"accountsType\": {\n                    \"code\": \"OWNER\",\n                    \"desc\": \"오너\"\n                },\n                \"accountsStatus\": {\n                    \"code\": \"JOIN\",\n                    \"desc\": \"가입\"\n                },\n                \"name\": \"김소미\",\n                \"email\": \"somiyv@thewc.co.kr\",\n                \"loginId\": \"somiyv\",\n                \"passwordChangeDate\": null,\n                \"phoneNumber\": null,\n                \"marketingConsentYn\": null,\n                \"login\": false,\n                \"currentTokenKey\": \"ZE3uAv56nJS-sDbSTjgZlQ\",\n                \"admin\": false,\n                \"loginTryCount\": 0,\n                \"lockStatus\": {\n                    \"code\": \"UNLOCK\",\n                    \"desc\": \"계정 잠금해제\"\n                },\n                \"lockDate\": null,\n                \"joinDate\": null,\n                \"lastLoginDate\": null\n            },\n            \"loginType\": {\n                \"code\": \"LOGIN\",\n                \"desc\": \"로그인\"\n            },\n            \"ip\": \"10.52.5.67\",\n            \"displayStatus\": null,\n            \"createDate\": \"20220822140453\"\n        },\n        {\n            \"id\": 4,\n            \"accountsDTO\": {\n                \"id\": 1,\n                \"accountsType\": {\n                    \"code\": \"OWNER\",\n                    \"desc\": \"오너\"\n                },\n                \"accountsStatus\": {\n                    \"code\": \"JOIN\",\n                    \"desc\": \"가입\"\n                },\n                \"name\": \"김소미\",\n                \"email\": \"somiyv@thewc.co.kr\",\n                \"loginId\": \"somiyv\",\n                \"passwordChangeDate\": null,\n                \"phoneNumber\": null,\n                \"marketingConsentYn\": null,\n                \"login\": false,\n                \"currentTokenKey\": \"ZE3uAv56nJS-sDbSTjgZlQ\",\n                \"admin\": false,\n                \"loginTryCount\": 0,\n                \"lockStatus\": {\n                    \"code\": \"UNLOCK\",\n                    \"desc\": \"계정 잠금해제\"\n                },\n                \"lockDate\": null,\n                \"joinDate\": null,\n                \"lastLoginDate\": null\n            },\n            \"loginType\": {\n                \"code\": \"LOGIN\",\n                \"desc\": \"로그인\"\n            },\n            \"ip\": \"10.52.5.67\",\n            \"displayStatus\": null,\n            \"createDate\": \"20220823140453\"\n        },\n        {\n            \"id\": 3,\n            \"accountsDTO\": {\n                \"id\": 1,\n                \"accountsType\": {\n                    \"code\": \"OWNER\",\n                    \"desc\": \"오너\"\n                },\n                \"accountsStatus\": {\n                    \"code\": \"JOIN\",\n                    \"desc\": \"가입\"\n                },\n                \"name\": \"김소미\",\n                \"email\": \"somiyv@thewc.co.kr\",\n                \"loginId\": \"somiyv\",\n                \"passwordChangeDate\": null,\n                \"phoneNumber\": null,\n                \"marketingConsentYn\": null,\n                \"login\": false,\n                \"currentTokenKey\": \"ZE3uAv56nJS-sDbSTjgZlQ\",\n                \"admin\": false,\n                \"loginTryCount\": 0,\n                \"lockStatus\": {\n                    \"code\": \"UNLOCK\",\n                    \"desc\": \"계정 잠금해제\"\n                },\n                \"lockDate\": null,\n                \"joinDate\": null,\n                \"lastLoginDate\": null\n            },\n            \"loginType\": {\n                \"code\": \"LOGIN\",\n                \"desc\": \"로그인\"\n            },\n            \"ip\": \"10.52.5.67\",\n            \"displayStatus\": null,\n            \"createDate\": \"20220824140453\"\n        },\n        {\n            \"id\": 2,\n            \"accountsDTO\": {\n                \"id\": 1,\n                \"accountsType\": {\n                    \"code\": \"OWNER\",\n                    \"desc\": \"오너\"\n                },\n                \"accountsStatus\": {\n                    \"code\": \"JOIN\",\n                    \"desc\": \"가입\"\n                },\n                \"name\": \"김소미\",\n                \"email\": \"somiyv@thewc.co.kr\",\n                \"loginId\": \"somiyv\",\n                \"passwordChangeDate\": null,\n                \"phoneNumber\": null,\n                \"marketingConsentYn\": null,\n                \"login\": false,\n                \"currentTokenKey\": \"ZE3uAv56nJS-sDbSTjgZlQ\",\n                \"admin\": false,\n                \"loginTryCount\": 0,\n                \"lockStatus\": {\n                    \"code\": \"UNLOCK\",\n                    \"desc\": \"계정 잠금해제\"\n                },\n                \"lockDate\": null,\n                \"joinDate\": null,\n                \"lastLoginDate\": null\n            },\n            \"loginType\": {\n                \"code\": \"LOGIN\",\n                \"desc\": \"로그인\"\n            },\n            \"ip\": \"10.52.5.67\",\n            \"displayStatus\": null,\n            \"createDate\": \"20220825140453\"\n        },\n        {\n            \"id\": 1,\n            \"accountsDTO\": {\n                \"id\": 1,\n                \"accountsType\": {\n                    \"code\": \"OWNER\",\n                    \"desc\": \"오너\"\n                },\n                \"accountsStatus\": {\n                    \"code\": \"JOIN\",\n                    \"desc\": \"가입\"\n                },\n                \"name\": \"김소미\",\n                \"email\": \"somiyv@thewc.co.kr\",\n                \"loginId\": \"somiyv\",\n                \"passwordChangeDate\": null,\n                \"phoneNumber\": null,\n                \"marketingConsentYn\": null,\n                \"login\": false,\n                \"currentTokenKey\": \"ZE3uAv56nJS-sDbSTjgZlQ\",\n                \"admin\": false,\n                \"loginTryCount\": 0,\n                \"lockStatus\": {\n                    \"code\": \"UNLOCK\",\n                    \"desc\": \"계정 잠금해제\"\n                },\n                \"lockDate\": null,\n                \"joinDate\": null,\n                \"lastLoginDate\": null\n            },\n            \"loginType\": {\n                \"code\": \"LOGIN\",\n                \"desc\": \"로그인\"\n            },\n            \"ip\": \"10.52.5.67\",\n            \"displayStatus\": null,\n            \"createDate\": \"20220826140453\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "로그인로그아웃",
+			"item": [
+				{
+					"name": "로그인",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"isAdminLogin\" : false,\n    \"loginId\" : \"harim2hi\",\n    \"password\" : \"@dlgkfla200105\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "로그아웃",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"accountId\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/auth/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "로그인 - 2차인증(이메일)",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"authType\": \"EMAIL\",\n    \"isAdminLogin\": false,\n    \"loginId\": \"harim2hi\",\n    \"otp\": \"976296\",\n    \"tokenKey\": \"f88b640a1ed03c911948c4ee4c4901b305ac6fe104d896ccc211b85609451372\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/auth/login/otp",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login",
+								"otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "강제 로그아웃",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"isAdminLogin\": false,\n\"loginId\": \"harim2hi\",\n\"password\": \"@dlgkfla200105\",\n\"tokenKey\": \"EE3EMmnG6LnQGa61Xspmhw\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v2/external/forceLogout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v2",
+								"external",
+								"forceLogout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "\b연동관리-상담채널연동",
+			"item": [
+				{
+					"name": "모듈채널 현황 조회",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJicmFuZHRlc3QyOCIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6Mjk1OCxcImxvZ2luSWRcIjpcImJyYW5kdGVzdDI4XCIsXCJuYW1lXCI6XCLtlZjsnbTrgrjsiqRiaTk2XCIsXCJlbWFpbFwiOlwicXFxQG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjEwNTMsXCJleHBpcmVUaW1lXCI6XCIyMDIyMDcyMTIyMjkxNVwiLFwiYWdlbnRNYXBwaW5nQnJhbmRWaWV3c1wiOlt7XCJicmFuZElkXCI6NTQxOSxcImNhdGVnb3J5SWRzXCI6WzI3NDAsMjc0MV19XSxcInRva2VuS2V5XCI6XCJSVVU4UjZJODRPamlkTXRaX2JfdGp3XCIsXCJhZG1pblwiOmZhbHNlLFwiZmlyc3RCcmFuZElkXCI6NTQxOSxcInRva2VuSXNzdWVkQXRcIjpcIjIwMjIwNzIxMTAyOTE1XCJ9IiwiaXNzIjoiaHR0cDovL3d3dy5jbG91ZGdhdGUuaW8iLCJpYXQiOjE2NTgzNjY5NTUsImV4cCI6MTY1ODQxMDE1NX0.J_D0QNqAYOuV52BT0Ft1ZYnhGkAy8SyZoxDLtg_DvAokq8IVg92u6AtnHorltBIueNoJmuVO__Rsvf4uKEu-9A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/service/brands/{brandId}/module-channels/enable-waiting",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"service",
+								"brands",
+								"{brandId}",
+								"module-channels",
+								"enable-waiting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "웹챗/챗봇 자동승인",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJicmFuZHRlc3QyNCIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6Mjk1NSxcImxvZ2luSWRcIjpcImJyYW5kdGVzdDI0XCIsXCJuYW1lXCI6XCLtlZjsnbTrgrjsiqRiaTkwXCIsXCJlbWFpbFwiOlwicXFxcUBuYXZlci5jb21cIixcInRpY2tldEFnZW50SWRcIjoxMDUwLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA3MjIwNTMxNDVcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjU0MTQsXCJjYXRlZ29yeUlkc1wiOlsyNzMwLDI3MzFdfSx7XCJicmFuZElkXCI6NTQwMyxcImNhdGVnb3J5SWRzXCI6WzI3MDgsMjcwOV19XSxcInRva2VuS2V5XCI6XCJla1JrRjNlU0M3OVZ5VEhCNmdlTG9nXCIsXCJhZG1pblwiOmZhbHNlLFwiZmlyc3RCcmFuZElkXCI6NTQwMyxcInRva2VuSXNzdWVkQXRcIjpcIjIwMjIwNzIxMTczMTQ1XCJ9IiwiaXNzIjoiaHR0cDovL3d3dy5jbG91ZGdhdGUuaW8iLCJpYXQiOjE2NTgzOTIzMDUsImV4cCI6MTY1ODQzNTUwNX0.Hyd7nX3R-iiv_cBGAAIWpAQ7f_eDqc6vnmLaF3hFU4cNSMiaBjtKMTU6J9fB5mQ3R70uppkONwVoFMjXyuQSng",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": \"{\\\"brandKey\\\":\\\"\\\",\\\"parameters\\\":[]}\",\n    \"chatStyleData\": \"{\\\"toolbarAgentIconPath\\\":\\\"\\\"\",\n    \"useWebChatAutoClose\": true,\n    \"autoCloseDuration\": 12019,\n    \"includingNonWorkingHours\":false,\n    \"customParameters\":[{\n        \"key\" : \"asfd\",\n        \"value\": \"asdfffff\"\n    },{\n        \"key\" : \"qwe\",\n        \"value\" : \"rty\"\n    },{\n        \"key\" : \"poi\",\n        \"value\": \"lkj\"\n    },{\n        \"key\":\"jjh\",\n        \"value\":\"good\"\n    }]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v3/brands/{brandId}/webchat-chatbot",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v3",
+								"brands",
+								"{brandId}",
+								"webchat-chatbot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "메일 자동승인",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJicmFuZHRlc3QyNCIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6Mjk1NSxcImxvZ2luSWRcIjpcImJyYW5kdGVzdDI0XCIsXCJuYW1lXCI6XCLtlZjsnbTrgrjsiqRiaTkwXCIsXCJlbWFpbFwiOlwicXFxcUBuYXZlci5jb21cIixcInRpY2tldEFnZW50SWRcIjoxMDUwLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA3MjIwNTMxNDVcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjU0MTQsXCJjYXRlZ29yeUlkc1wiOlsyNzMwLDI3MzFdfSx7XCJicmFuZElkXCI6NTQwMyxcImNhdGVnb3J5SWRzXCI6WzI3MDgsMjcwOV19XSxcInRva2VuS2V5XCI6XCJla1JrRjNlU0M3OVZ5VEhCNmdlTG9nXCIsXCJhZG1pblwiOmZhbHNlLFwiZmlyc3RCcmFuZElkXCI6NTQwMyxcInRva2VuSXNzdWVkQXRcIjpcIjIwMjIwNzIxMTczMTQ1XCJ9IiwiaXNzIjoiaHR0cDovL3d3dy5jbG91ZGdhdGUuaW8iLCJpYXQiOjE2NTgzOTIzMDUsImV4cCI6MTY1ODQzNTUwNX0.Hyd7nX3R-iiv_cBGAAIWpAQ7f_eDqc6vnmLaF3hFU4cNSMiaBjtKMTU6J9fB5mQ3R70uppkONwVoFMjXyuQSng",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": \"{\\\"nickName\\\":\\\"jjhtest\\\",\\\"iconUrl\\\":\\\"\\\",\\\"email\\\":\\\"qwe199942@naver.com\\\",\\\"user\\\":\\\"qwe199942\\\",\\\"password\\\":\\\"spdlqj*963.\\\",\\\"pop3Host\\\":\\\"pop.naver.com\\\",\\\"pop3Encryption\\\":\\\"ssl\\\",\\\"pop3Port\\\":\\\"995\\\",\\\"smtpHost\\\":\\\"smtp.naver.com\\\",\\\"smtpEncryption\\\":\\\"ssl\\\",\\\"smtpPort\\\":\\\"465\\\",\\\"use\\\":true,\\\"isUse\\\":true}\",\n    \"moduleName\": \"MAIL\",\n    \"channelName\": \"MAIL\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v3/brands/{brandId}/auto-approval-channel",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v3",
+								"brands",
+								"{brandId}",
+								"auto-approval-channel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "페이스북 자동승인",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJicmFuZHRlc3QyNCIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6Mjk1NSxcImxvZ2luSWRcIjpcImJyYW5kdGVzdDI0XCIsXCJuYW1lXCI6XCLtlZjsnbTrgrjsiqRiaTkwXCIsXCJlbWFpbFwiOlwicXFxcUBuYXZlci5jb21cIixcInRpY2tldEFnZW50SWRcIjoxMDUwLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA3MjIwNTMxNDVcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjU0MTQsXCJjYXRlZ29yeUlkc1wiOlsyNzMwLDI3MzFdfSx7XCJicmFuZElkXCI6NTQwMyxcImNhdGVnb3J5SWRzXCI6WzI3MDgsMjcwOV19XSxcInRva2VuS2V5XCI6XCJla1JrRjNlU0M3OVZ5VEhCNmdlTG9nXCIsXCJhZG1pblwiOmZhbHNlLFwiZmlyc3RCcmFuZElkXCI6NTQwMyxcInRva2VuSXNzdWVkQXRcIjpcIjIwMjIwNzIxMTczMTQ1XCJ9IiwiaXNzIjoiaHR0cDovL3d3dy5jbG91ZGdhdGUuaW8iLCJpYXQiOjE2NTgzOTIzMDUsImV4cCI6MTY1ODQzNTUwNX0.Hyd7nX3R-iiv_cBGAAIWpAQ7f_eDqc6vnmLaF3hFU4cNSMiaBjtKMTU6J9fB5mQ3R70uppkONwVoFMjXyuQSng",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": \"{\\\"appId\\\":\\\"z\\\",\\\"brandKey\\\":\\\"z\\\",\\\"pageAccessToken\\\":\\\"z\\\",\\\"secretCode\\\":\\\"z\\\",\\\"verifyToken\\\":\\\"\\\"}\",\n    \"moduleName\": \"CHAT\",\n    \"channelName\": \"FACEBOOK_TALK\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v3/brands/{brandId}/auto-approval-channel",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v3",
+								"brands",
+								"{brandId}",
+								"auto-approval-channel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "네이버톡톡 자동승인",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJicmFuZHRlc3QyNCIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6Mjk1NSxcImxvZ2luSWRcIjpcImJyYW5kdGVzdDI0XCIsXCJuYW1lXCI6XCLtlZjsnbTrgrjsiqRiaTkwXCIsXCJlbWFpbFwiOlwicXFxcUBuYXZlci5jb21cIixcInRpY2tldEFnZW50SWRcIjoxMDUwLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA3MjIwNTMxNDVcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjU0MTQsXCJjYXRlZ29yeUlkc1wiOlsyNzMwLDI3MzFdfSx7XCJicmFuZElkXCI6NTQwMyxcImNhdGVnb3J5SWRzXCI6WzI3MDgsMjcwOV19XSxcInRva2VuS2V5XCI6XCJla1JrRjNlU0M3OVZ5VEhCNmdlTG9nXCIsXCJhZG1pblwiOmZhbHNlLFwiZmlyc3RCcmFuZElkXCI6NTQwMyxcInRva2VuSXNzdWVkQXRcIjpcIjIwMjIwNzIxMTczMTQ1XCJ9IiwiaXNzIjoiaHR0cDovL3d3dy5jbG91ZGdhdGUuaW8iLCJpYXQiOjE2NTgzOTIzMDUsImV4cCI6MTY1ODQzNTUwNX0.Hyd7nX3R-iiv_cBGAAIWpAQ7f_eDqc6vnmLaF3hFU4cNSMiaBjtKMTU6J9fB5mQ3R70uppkONwVoFMjXyuQSng",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": \"{\\\"sendApiKey\\\":\\\"asdf\\\",\\\"naverTalkId\\\":\\\"zszzzz\\\",\\\"brandKey\\\":\\\"\\\",\\\"webHookUrl\\\":\\\"\\\",\\\"naverTalkChat\\\":\\\"\\\"}\",\n    \"moduleName\": \"CHAT\",\n    \"channelName\": \"NAVER_TALK\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v3/brands/{brandId}/auto-approval-channel",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v3",
+								"brands",
+								"{brandId}",
+								"auto-approval-channel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "모듈채널 삭제(연동해지 or 신청취소)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJicmFuZHRlc3QyOCIsImRldGFpbHMiOiJ7XCJhZ2VudElkXCI6Mjk1OCxcImxvZ2luSWRcIjpcImJyYW5kdGVzdDI4XCIsXCJuYW1lXCI6XCLtlZjsnbTrgrjsiqRiaTk2XCIsXCJlbWFpbFwiOlwicXFxQG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjEwNTMsXCJleHBpcmVUaW1lXCI6XCIyMDIyMDcyMTIyMjkxNVwiLFwiYWdlbnRNYXBwaW5nQnJhbmRWaWV3c1wiOlt7XCJicmFuZElkXCI6NTQxOSxcImNhdGVnb3J5SWRzXCI6WzI3NDAsMjc0MV19XSxcInRva2VuS2V5XCI6XCJSVVU4UjZJODRPamlkTXRaX2JfdGp3XCIsXCJhZG1pblwiOmZhbHNlLFwiZmlyc3RCcmFuZElkXCI6NTQxOSxcInRva2VuSXNzdWVkQXRcIjpcIjIwMjIwNzIxMTAyOTE1XCJ9IiwiaXNzIjoiaHR0cDovL3d3dy5jbG91ZGdhdGUuaW8iLCJpYXQiOjE2NTgzNjY5NTUsImV4cCI6MTY1ODQxMDE1NX0.J_D0QNqAYOuV52BT0Ft1ZYnhGkAy8SyZoxDLtg_DvAokq8IVg92u6AtnHorltBIueNoJmuVO__Rsvf4uKEu-9A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v3/module-channels/{moduleChannelId}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v3",
+								"module-channels",
+								"{moduleChannelId}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "공통_헤더",
+			"item": [
+				{
+					"name": "멀티브랜드 - 헤더 내 상태 조회",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvZ2gyMDIyIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjozMDc3LFwibG9naW5JZFwiOlwib2doMjAyMlwiLFwibmFtZVwiOlwi7Jik6re87ZiBXCIsXCJlbWFpbFwiOlwib2doQHRoZXdjLmNvLmtyXCIsXCJ0aWNrZXRBZ2VudElkXCI6MTA2NixcImV4cGlyZVRpbWVcIjpcIjIwMjIwODI0MTA1NTE5XCIsXCJhZ2VudE1hcHBpbmdCcmFuZFZpZXdzXCI6W3tcImJyYW5kSWRcIjoxLFwiY2F0ZWdvcnlJZHNcIjpbMV19XSxcInRva2VuS2V5XCI6XCI3RXpIQ1BIU3preUtMcHdLWGF0RGhnXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMlwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgyNDA5NTUxOVwifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYxMzM0OTE5LCJleHAiOjE2NjEzMzg1MTl9.VRaTPndc9Ud1p8EoZi6M_FMZhlw6YfCAB0dkTyYFHWGZUisvyIiGXW2pWPFKyzyE_MQ1LUMdJktKXCZ6FWqllA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/my/status-info",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"my",
+								"status-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "멀티브랜드 - 헤더의 내상태의 근무상태 변경",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvZ2gyMDIyIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjozMDc3LFwibG9naW5JZFwiOlwib2doMjAyMlwiLFwibmFtZVwiOlwi7Jik6re87ZiBXCIsXCJlbWFpbFwiOlwib2doQHRoZXdjLmNvLmtyXCIsXCJ0aWNrZXRBZ2VudElkXCI6MTA2NixcImV4cGlyZVRpbWVcIjpcIjIwMjIwODIzMDkzODA1XCIsXCJhZ2VudE1hcHBpbmdCcmFuZFZpZXdzXCI6W3tcImJyYW5kSWRcIjoxLFwiY2F0ZWdvcnlJZHNcIjpbMV19XSxcInRva2VuS2V5XCI6XCJKMDBfMTJSTjNsVndFaUJsZHhhenFnXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMlwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgyMzA4MzgwNVwifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYxMjQzODg1LCJleHAiOjE2NjEyNDc0ODV9.ffAoocMwQQsjLmvtFMR1CTTjf6jtjjEUCpYV5GdUScpDQU1kwtBHQkLNEkY2RtPgqbyt-M3BG8Ma7fUIhK9cgA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"workingStatus\" : \"IN_COUNSELING\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v2/agents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v2",
+								"agents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "멀티블내드 헤더 프로필 조회",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvZ2gyMDIyIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjozMDc3LFwibG9naW5JZFwiOlwib2doMjAyMlwiLFwibmFtZVwiOlwi7Jik6re87ZiBXCIsXCJlbWFpbFwiOlwib2doQHRoZXdjLmNvLmtyXCIsXCJ0aWNrZXRBZ2VudElkXCI6MTA2NixcImV4cGlyZVRpbWVcIjpcIjIwMjIwODI0MTA1NTE5XCIsXCJhZ2VudE1hcHBpbmdCcmFuZFZpZXdzXCI6W3tcImJyYW5kSWRcIjoxLFwiY2F0ZWdvcnlJZHNcIjpbMV19XSxcInRva2VuS2V5XCI6XCI3RXpIQ1BIU3preUtMcHdLWGF0RGhnXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMlwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgyNDA5NTUxOVwifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYxMzM0OTE5LCJleHAiOjE2NjEzMzg1MTl9.VRaTPndc9Ud1p8EoZi6M_FMZhlw6YfCAB0dkTyYFHWGZUisvyIiGXW2pWPFKyzyE_MQ1LUMdJktKXCZ6FWqllA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/accounts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "비밀번호 수정 api",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\" : \"11dnjfekf!\",\n    \"newPassword\" :\"!twc1234\",\n    \"retryNewPassword\" : \"!twc1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/accounts/1/password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"1",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "멀티브랜드 - 헤더에서 이메일 인증 수정",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"loginId\" : \"somiyv\",\n    \"email\" : \"ogh@thewc.co.kr\",\n    \"token\" : \"70c24a7534a09b278a3ac68b6dce0ba81d082e1332100239a7ed8bfafbccc768\",\n    \"otp\" : \"458766\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v2/otp/secured/email/verification/confirm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v2",
+								"otp",
+								"secured",
+								"email",
+								"verification",
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "멀티브랜드 - QR 초기화 멤버 조회",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/work-places/1/qr-initialization",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"work-places",
+								"1",
+								"qr-initialization"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "멀티브랜드 - 헤더 프로필 수정",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"workPlacesId\" : 1,\n    \"accountId\" : 1,\n    \"email\" : \"aa@thewc.co.kr\", // 필수\n    \"phoneNumber\" : \"123123\", // 필수\n    \"accountsType\" : \"OWNER\",\n    \"brandIds\" : [],\n    \"workPlaceRolesId\": 1,\n    \"name\" : \"근혁\", // 필수\n    \"infoReceiveAgree\" : true\n\n    /*\n    private Long workPlacesId;\n    private Long accountId;\n    private String email;\n    private String phoneNumber;\n    private AccountsType accountsType;\n    private List<Long> brandIds;\n    private Long workPlaceRolesId;\n    private String name;\n    private boolean infoReceiveAgree;\n    */\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/accounts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "멀티브랜드 - 헤더 이메일 중복 체크 api",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/accounts/email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"email"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "브랜드관리-기본설정",
+			"item": [
+				{
+					"name": "브랜드 기본 설정 조회",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/service/brands/1/basic-setting",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"service",
+								"brands",
+								"1",
+								"basic-setting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "멀티브랜드 -  브랜드 삭제",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v3/brands/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v3",
+								"brands",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "보안관리",
+			"item": [
+				{
+					"name": "멀티브랜드 - 워크플레이스 보안 페이지 조회",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/work-places/1/work-places-security",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"work-places",
+								"1",
+								"work-places-security"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "form",
+			"item": [
+				{
+					"name": "멀티브랜드 - 헤더 workingStatus 리스트 조회",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/form/working-status?workingStatusSearchType=HEADER",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"form",
+								"working-status"
+							],
+							"query": [
+								{
+									"key": "workingStatusSearchType",
+									"value": "HEADER"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "accounts의 메뉴 조회",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb21pLW1hbmFnZXIxIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjoyMDI3LFwibG9naW5JZFwiOlwic29taS1tYW5hZ2VyMVwiLFwibmFtZVwiOlwi6rmA7IaM66-466ek64uI7KCAXCIsXCJlbWFpbFwiOlwic29taXl2QG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjkyLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA4MTAwODU0MDZcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjEyNixcImNhdGVnb3J5SWRzXCI6WzE3OF19LHtcImJyYW5kSWRcIjoxLFwiY2F0ZWdvcnlJZHNcIjpbMV19LHtcImJyYW5kSWRcIjozLFwiY2F0ZWdvcnlJZHNcIjpbM119XSxcInRva2VuS2V5XCI6XCJDa1hnREM0ZXZ2ZEtBUFFBMDBUN2pnXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMlwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgxMDA3NTQwNlwifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYwMTE4MDQ2LCJleHAiOjE2NjAxMjE2NDZ9.HsQxex9ygsGxCghf8b1bnjZO9I8Z5GZC4hcECwGt_ckW4K99ehELiMvx-K4bv82Vlfsw9jYoevME94HxJhP-qQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/my/menus",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"my",
+						"menus"
+					],
+					"query": [
+						{
+							"key": "ㅁ",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "accounts의 메뉴 조회",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzb21pLW1hbmFnZXIxIiwiZGV0YWlscyI6IntcImFnZW50SWRcIjoyMDI3LFwibG9naW5JZFwiOlwic29taS1tYW5hZ2VyMVwiLFwibmFtZVwiOlwi6rmA7IaM66-466ek64uI7KCAXCIsXCJlbWFpbFwiOlwic29taXl2QG5hdmVyLmNvbVwiLFwidGlja2V0QWdlbnRJZFwiOjkyLFwiZXhwaXJlVGltZVwiOlwiMjAyMjA4MTAwODU0MDZcIixcImFnZW50TWFwcGluZ0JyYW5kVmlld3NcIjpbe1wiYnJhbmRJZFwiOjEyNixcImNhdGVnb3J5SWRzXCI6WzE3OF19LHtcImJyYW5kSWRcIjoxLFwiY2F0ZWdvcnlJZHNcIjpbMV19LHtcImJyYW5kSWRcIjozLFwiY2F0ZWdvcnlJZHNcIjpbM119XSxcInRva2VuS2V5XCI6XCJDa1hnREM0ZXZ2ZEtBUFFBMDBUN2pnXCIsXCJjYWxsU2VydmVyVHlwZVwiOlwiTkVPTUVDQ0FfMlwiLFwiYWRtaW5cIjpmYWxzZSxcImZpcnN0QnJhbmRJZFwiOjEsXCJ0b2tlbklzc3VlZEF0XCI6XCIyMDIyMDgxMDA3NTQwNlwifSIsImlzcyI6Imh0dHA6Ly93d3cuY2xvdWRnYXRlLmlvIiwiaWF0IjoxNjYwMTE4MDQ2LCJleHAiOjE2NjAxMjE2NDZ9.HsQxex9ygsGxCghf8b1bnjZO9I8Z5GZC4hcECwGt_ckW4K99ehELiMvx-K4bv82Vlfsw9jYoevME94HxJhP-qQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/my/menus",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"my",
+								"menus"
+							],
+							"query": [
+								{
+									"key": "ㅁ",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Aug 2022 07:54:59 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"brandDTOS\": [\n        {\n            \"id\": 5,\n            \"name\": \"클게_데브4\",\n            \"introduce\": null,\n            \"businessLicense\": null,\n            \"businessNumber\": null,\n            \"outOfWorkingStatus\": false,\n            \"managerContact\": null,\n            \"homepageUrl\": null,\n            \"brandIcon\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/WZsyStWRrt.png\",\n            \"useCounselingCategory\": false,\n            \"useBanWord\": false,\n            \"displayStatus\": null,\n            \"callType\": null,\n            \"distributionOption\": null,\n            \"useAgentAttendance\": false,\n            \"expireTime\": 0,\n            \"whiteIpUse\": false\n        },\n        {\n            \"id\": 4,\n            \"name\": \"클게_데브3\",\n            \"introduce\": null,\n            \"businessLicense\": null,\n            \"businessNumber\": null,\n            \"outOfWorkingStatus\": false,\n            \"managerContact\": null,\n            \"homepageUrl\": null,\n            \"brandIcon\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/VKPmqJTFPb.jpeg\",\n            \"useCounselingCategory\": false,\n            \"useBanWord\": false,\n            \"displayStatus\": null,\n            \"callType\": null,\n            \"distributionOption\": null,\n            \"useAgentAttendance\": false,\n            \"expireTime\": 0,\n            \"whiteIpUse\": false\n        },\n        {\n            \"id\": 3,\n            \"name\": \"클게_데브2\",\n            \"introduce\": null,\n            \"businessLicense\": null,\n            \"businessNumber\": null,\n            \"outOfWorkingStatus\": false,\n            \"managerContact\": null,\n            \"homepageUrl\": null,\n            \"brandIcon\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/iIsLeaUfZO.jpg\",\n            \"useCounselingCategory\": false,\n            \"useBanWord\": false,\n            \"displayStatus\": null,\n            \"callType\": null,\n            \"distributionOption\": null,\n            \"useAgentAttendance\": false,\n            \"expireTime\": 0,\n            \"whiteIpUse\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"클게_데브1\",\n            \"introduce\": null,\n            \"businessLicense\": null,\n            \"businessNumber\": null,\n            \"outOfWorkingStatus\": false,\n            \"managerContact\": null,\n            \"homepageUrl\": null,\n            \"brandIcon\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/qxNZlUSaBG.jpg\",\n            \"useCounselingCategory\": false,\n            \"useBanWord\": false,\n            \"displayStatus\": null,\n            \"callType\": null,\n            \"distributionOption\": null,\n            \"useAgentAttendance\": false,\n            \"expireTime\": 0,\n            \"whiteIpUse\": false\n        },\n        {\n            \"id\": 1,\n            \"name\": \"클게_데브_0\",\n            \"introduce\": null,\n            \"businessLicense\": null,\n            \"businessNumber\": null,\n            \"outOfWorkingStatus\": false,\n            \"managerContact\": null,\n            \"homepageUrl\": null,\n            \"brandIcon\": \"https://storage.googleapis.com/cloud-gate-storage/login_id/eCaHVKSBIB.png\",\n            \"useCounselingCategory\": false,\n            \"useBanWord\": false,\n            \"displayStatus\": null,\n            \"callType\": null,\n            \"distributionOption\": null,\n            \"useAgentAttendance\": false,\n            \"expireTime\": 0,\n            \"whiteIpUse\": false\n        }\n    ],\n    \"menus\": {\n        \"OPERATION_MENU\": [\n            \"ASSIGN\",\n            \"TEXT_OPERATION\",\n            \"OPERATION_MENU\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "마이그레이션",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v2/brands/migration",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brands",
+						"migration"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
